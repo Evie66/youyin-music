@@ -1,0 +1,275 @@
+.albuminfo {
+  padding-top: 60px;
+  background: url("https://cdnmusic.migu.cn/picture/2021/0513/1521/AMaffbaece8913ed61c3442e76d34d4de6.jpg");
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+.albuminfo .inner {
+  width: 100%;
+  height: 420px;
+  background: inherit;
+  filter: blur(40px);
+  transform: scale(1.7);
+  position: absolute;
+  top: 0;
+}
+.albuminfo .main {
+  align-items: center;
+}
+.albuminfo .main > div {
+  height: 100%;
+}
+.albuminfo .main > div:first-child {
+  width: 20%;
+  padding: 40px 0;
+  margin-right: 60px;
+  z-index: 999;
+}
+.albuminfo .main > div:first-child .wrap {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+  align-items: center;
+}
+.albuminfo .main > div:first-child .wrap .pic {
+  width: 100%;
+  position: relative;
+}
+.albuminfo .main > div:first-child .wrap .pic .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.albuminfo .main > div:first-child .wrap .pic .box:hover img {
+  transform: scale(1.2);
+}
+.albuminfo .main > div:first-child .wrap .pic .box:hover .play {
+  display: block;
+}
+.albuminfo .main > div:first-child .wrap .pic .box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease 0s;
+  z-index: -1;
+}
+.albuminfo .main > div:first-child .wrap .pic .cd {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/album-cover-gold.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -11%;
+  top: 0;
+  z-index: -1;
+}
+.albuminfo .main > div:last-child {
+  width: 80%;
+  height: 100%;
+  z-index: 999;
+}
+.albuminfo .main > div:last-child > div, .albuminfo .main > div:last-child h2 {
+  padding: 15px 0;
+}
+.albuminfo .main > div:last-child h2 {
+  font-weight: 700;
+}
+.albuminfo .main > div:last-child .btns {
+  color: #222;
+  font-size: 12px;
+  cursor: pointer;
+}
+.albuminfo .main > div:last-child .btns li.cur span {
+  background: #ff00a7;
+  color: #fff;
+  border: 1px solid #ff00a7;
+}
+.albuminfo .main > div:last-child .btns li.cur span:hover {
+  background: #f0009c;
+  color: #fff;
+  border: 1px solid #f0009c;
+}
+.albuminfo .main > div:last-child .btns li .btn_play {
+  padding: 0 23px;
+  display: inline-block;
+  height: 38px;
+  border-radius: 19px;
+  line-height: 38px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  border: 1px solid #c9c9c9;
+  color: #fff;
+  position: relative;
+}
+.albuminfo .main > div:last-child .btns li .btn_play:hover {
+  background: #fbfbfb;
+  color: #666;
+}
+.albuminfo .main > div:last-child .btns li .btn_play .icon_play {
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  vertical-align: -3px;
+  background: url("../img/icon_sprite.630b3e60.png") no-repeat;
+  background-position: -80px -220px;
+  margin-right: 6px;
+}
+.albuminfo .main > div:last-child .btns li .btn_play .love {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -5px;
+  margin-right: 4px;
+  background: url(../img/love.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.albuminfo .main > div:last-child .btns li .btn_play .add {
+  width: 16px;
+  background-position: -20px 0;
+}
+.albuminfo .main > div:last-child .btns li .love-wrap:hover .love {
+  background-image: url("../img/love-full.png");
+}
+
+.like-list {
+  background: #fff;
+}
+.like-list .container {
+  max-width: 1200px;
+}
+.like-list .main .title {
+  padding: 10px 0;
+}
+.like-list .main .title li {
+  flex: 0 0 80px;
+  cursor: pointer;
+}
+.like-list .main .title li.cur {
+  color: #ff00a7;
+}
+.like-list .main .btns {
+  color: #222;
+  font-size: 12px;
+  cursor: pointer;
+}
+.like-list .main .btns li.cur span {
+  background: #ff00a7;
+  color: #fff;
+  border: 1px solid #ff00a7;
+}
+.like-list .main .btns li.cur span:hover {
+  background: #f0009c;
+  border: 1px solid #f0009c;
+}
+.like-list .main .btns li .btn_play {
+  background: #fff;
+  padding: 0 23px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  border: 1px solid #c9c9c9;
+}
+.like-list .main .btns li .btn_play .icon_play {
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  vertical-align: -3px;
+  background: url("../img/icon_sprite.630b3e60.png") no-repeat;
+  background-position: -80px -220px;
+  margin-right: 6px;
+}
+.like-list .main .btns li .btn_play .add {
+  width: 16px;
+  background-position: -20px 0;
+}
+.like-list .main .result table {
+  padding: 0 50px;
+}
+.like-list .main .result table thead tr {
+  height: 80px;
+}
+.like-list .main .result table thead tr th {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+.like-list .main .result table tbody tr {
+  height: 70px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.like-list .main .result table tbody tr td:first-child {
+  color: #999;
+  width: 10%;
+}
+.like-list .main .result table tbody tr td:nth-child(2) {
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:nth-child(3) {
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:last-child {
+  position: relative;
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:last-child .love {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  line-height: 16px;
+  display: none;
+  z-index: 100;
+}
+.like-list .main .result table tbody tr td:last-child .love .icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/love.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+.like-list .main .result table tbody tr td:last-child .love .icon:hover {
+  background-image: url("../img/love-full.png");
+}
+.like-list .main .result table tbody tr td:last-child .love .cur {
+  background-image: url("../img/love-full.png");
+}
+.like-list .main .result table tbody tr td .song {
+  font-size: 0.4em;
+  color: #333;
+  text-decoration: none;
+}
+.like-list .main .result table tbody tr td .song:hover {
+  color: #ff00a7;
+}
+.like-list .main .result table tbody tr td .singer {
+  font-size: 0.4em;
+  color: #ff00a7;
+  text-decoration: none;
+}
+.like-list .main .result table tbody tr .album {
+  font-size: 0.4em;
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr .album:hover {
+  color: #ff00a7;
+}
+.like-list .main .result table tbody tr:hover {
+  background: rgba(211, 211, 211, 0.5);
+}
+.like-list .main .result table tbody tr:hover .love {
+  display: block !important;
+}
+
+/*# sourceMappingURL=albumdetail.css.map */

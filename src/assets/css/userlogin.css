@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #3459ff, #883ffe);
+  position: relative;
+}
+.center {
+  width: 1280px;
+  margin: 0 auto;
+}
+.login-form {
+  width: 1180px;
+  height: 756px;
+  background: rgba(0,0,0,.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -378px;
+  margin-left: -590px;
+  border-radius: 10px;
+}
+.login-form img {
+  width: 540px;
+  float: left;
+  border-radius: 10px 0 0 10px;
+  /* position: absolute; */
+}
+.login-form .r {
+  float: left;
+  width: 640px;
+  height: 756px;
+  background: url('../img/welcome.png') no-repeat 50% 15%;
+  padding: 90px;
+  padding-top: 170px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #fff;
+  /* filter: blur(10px); */
+}
+.login-form .r .txt {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ff00a7;
+}
+.login-form .r .txt h1 {
+  font-weight: 400;
+}
+.login-form .r .form {
+  margin-bottom: 20px;
+  position: relative;
+}
+.login-form .r .form #msg1 {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  /* display: none; */
+  color: #ff00a7;
+}
+.login-form .r .form #msg2 {
+  position: absolute;
+  right: 0;
+  top: 90px;
+  /* display: none; */
+  color: #ff00a7;
+}
+.login-form .r .form input {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  background: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.login-form .r .form input:nth-child(1) {
+  background: url('../img/user.png') no-repeat;
+  background-size: 6%;
+}
+.login-form .r .form input:nth-child(3) {
+  background: url('../img/pwd.png') no-repeat;
+  background-size: 6%;
+}
+.login-form .r .pwd {
+  font-size: 14px;
+  margin-bottom: 50px;
+  /* 文字不可被选中 */
+  user-select: none;
+}
+.login-form .r .pwd input{
+  vertical-align: middle;
+  margin-top: 3px;
+  float: left;
+}
+.login-form .r .pwd a {
+  text-decoration: none;
+  color: #fff;
+  float: right;
+}
+.login-form .r button {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  background: #ff00a7;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.login-form .r .reg {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}

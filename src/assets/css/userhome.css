@@ -1,0 +1,181 @@
+.navbar {
+  margin-bottom: 60px;
+}
+
+.user {
+  width: 100%;
+  background: url("../img/bg_home2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.user .container {
+  height: 100%;
+}
+.user .main {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  height: 100%;
+}
+.user .main .header {
+  width: 110px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.user .main .header img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user .main .bottom {
+  margin-top: 50px;
+}
+.user .main .bottom li {
+  color: #fff;
+  flex: 0 0 100px;
+  cursor: pointer;
+}
+.user .main .bottom li.cur {
+  color: #ff00a7;
+}
+
+.like-list {
+  background: #fff;
+}
+.like-list .container {
+  max-width: 1200px;
+}
+.like-list .main .title {
+  padding: 10px 0;
+}
+.like-list .main .title li {
+  flex: 0 0 80px;
+  cursor: pointer;
+}
+.like-list .main .title li.cur {
+  color: #ff00a7;
+}
+.like-list .main .btns {
+  color: #222;
+  font-size: 12px;
+  cursor: pointer;
+}
+.like-list .main .btns li.cur span {
+  background: #ff00a7;
+  color: #fff;
+  border: 1px solid #ff00a7;
+}
+.like-list .main .btns li.cur span:hover {
+  background: #f0009c;
+  border: 1px solid #f0009c;
+}
+.like-list .main .btns li .btn_play {
+  background: #fff;
+  padding: 0 23px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  border: 1px solid #c9c9c9;
+}
+.like-list .main .btns li .btn_play .icon_play {
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  vertical-align: -3px;
+  background: url("../img/icon_sprite.630b3e60.png") no-repeat;
+  background-position: -80px -220px;
+  margin-right: 6px;
+}
+.like-list .main .btns li .btn_play .add {
+  width: 16px;
+  background-position: -20px 0;
+}
+.like-list .main .result table {
+  padding: 0 50px;
+}
+.like-list .main .result table thead tr {
+  height: 80px;
+}
+.like-list .main .result table thead tr th {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+.like-list .main .result table tbody tr {
+  height: 70px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.like-list .main .result table tbody tr td:first-child {
+  color: #999;
+  width: 10%;
+}
+.like-list .main .result table tbody tr td:nth-child(2) {
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:nth-child(3) {
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:last-child {
+  position: relative;
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr td:last-child .love {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  line-height: 16px;
+  display: none;
+  z-index: 100;
+}
+.like-list .main .result table tbody tr td:last-child .love .icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/love.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+.like-list .main .result table tbody tr td:last-child .love .icon:hover {
+  background-image: url("../img/love-full.png");
+}
+.like-list .main .result table tbody tr td:last-child .love .cur {
+  background-image: url("../img/love-full.png");
+}
+.like-list .main .result table tbody tr td .song {
+  font-size: 0.4em;
+  color: #333;
+  text-decoration: none;
+}
+.like-list .main .result table tbody tr td .song:hover {
+  color: #ff00a7;
+}
+.like-list .main .result table tbody tr td .singer {
+  font-size: 0.4em;
+  color: #ff00a7;
+  text-decoration: none;
+}
+.like-list .main .result table tbody tr .album {
+  font-size: 0.4em;
+  width: 22.5%;
+}
+.like-list .main .result table tbody tr .album:hover {
+  color: #ff00a7;
+}
+.like-list .main .result table tbody tr:hover {
+  background: rgba(211, 211, 211, 0.5);
+}
+.like-list .main .result table tbody tr:hover .love {
+  display: block !important;
+}
+
+/*# sourceMappingURL=userhome.css.map */

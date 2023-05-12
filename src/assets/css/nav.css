@@ -1,0 +1,185 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(20px);
+  z-index: 100;
+}
+.navbar .container {
+  height: 100%;
+}
+.navbar .container .header {
+  height: 100%;
+}
+.navbar .container .collapse {
+  height: 100%;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  width: 130px;
+}
+.navbar .navbar-brand img {
+  width: 50px;
+  vertical-align: middle;
+}
+.navbar .navbar-nav li {
+  text-align: center;
+  height: 100%;
+  padding: 10px 0;
+  width: 90px;
+  float: left;
+  margin: 0;
+}
+.navbar .navbar-nav li .nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff !important;
+}
+.navbar .navbar-nav li:hover {
+  background: #ff00a7;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar .navbar-nav li:nth-child(6) {
+  background: none;
+  width: 100%;
+  max-width: 230px;
+  margin-left: 10px;
+  position: relative;
+}
+.navbar .navbar-nav li:nth-child(6) span {
+  width: 24px;
+  height: 24px;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translate(0, -50%);
+}
+.navbar .navbar-nav li:nth-child(6) span:hover {
+  background-image: url("../img/搜索.png");
+}
+.navbar .navbar-nav li:nth-child(6) .form-inline input {
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-size: 10%;
+  background-position: 95% 50%;
+  margin-right: 15px;
+}
+.navbar .navbar-nav li:nth-child(7) {
+  background: none;
+  position: relative;
+}
+.navbar .navbar-nav li:nth-child(7) .userinfo {
+  position: absolute;
+  top: 60px;
+  background: #222;
+  backdrop-filter: blur(20px);
+  display: none;
+}
+.navbar .navbar-nav li:nth-child(7) .userinfo::before {
+  content: "";
+  display: block;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #222;
+  position: absolute;
+  left: 41%;
+  top: -16%;
+}
+.navbar .navbar-nav li:nth-child(7) .userinfo li {
+  background: url("../img/user.png") no-repeat;
+  background-size: 20%;
+  background-position: 5% 50%;
+  padding-left: 14px;
+}
+.navbar .navbar-nav li:nth-child(7) .userinfo li:nth-child(2) {
+  background-image: url("../img/logout.png");
+}
+.navbar .navbar-nav li:nth-child(7) .userinfo li a {
+  font-size: 14px;
+}
+.navbar .navbar-nav li:nth-child(7):hover .userinfo {
+  display: block;
+}
+.navbar .navbar-nav li:nth-child(7):hover .userinfo li a {
+  text-decoration: none;
+}
+.navbar .navbar-nav li:nth-child(7) a {
+  display: inline;
+  color: #fff;
+}
+.navbar .navbar-nav li:nth-child(7) a:hover {
+  color: #ff00a7 !important;
+}
+.navbar .navbar-nav .form-inline input {
+  font-size: 12px;
+  width: 230px !important;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: none !important;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-size: 10%;
+  background-position: 95% 50%;
+  margin-right: 15px;
+}
+.navbar .navbar-nav .form-inline .form-control:focus {
+  box-shadow: none;
+}
+.navbar .navbar-nav .form-inline .search {
+  width: 24px;
+  height: 24px;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.navbar .navbar-nav .form-inline .search:hover {
+  background-image: url("../img/搜索.png");
+}
+
+@media (min-width: 576px) and (max-width: 960px) {
+  .container .navbar {
+    width: 100%;
+  }
+  .container .navbar .navbar-nav li {
+    text-align: center;
+    height: 100%;
+    float: left;
+    margin: 0;
+  }
+  .container .navbar .navbar-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container .navbar .navbar-nav li:hover {
+    background: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

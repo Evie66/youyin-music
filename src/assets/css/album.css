@@ -1,0 +1,92 @@
+.album h2 {
+  color: #222;
+  font-size: 2vw;
+  text-align: center;
+}
+.album h3 {
+  color: rgba(255, 0, 167, 0.2);
+  margin-top: -3px;
+  font-size: 1vw;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.album .row {
+  margin: 0;
+}
+.album .row .item {
+  padding: 0 20px;
+}
+.album .row .item .play {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/play.png") no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+.album .row .item .play:hover {
+  background-image: url("../img/play2.png");
+}
+.album .row .item:hover .play {
+  display: block;
+}
+.album .row .item .wrap {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+  margin: 0 auto;
+}
+.album .row .item .wrap .pic {
+  width: 100%;
+  position: relative;
+}
+.album .row .item .wrap .pic .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.album .row .item .wrap .pic .box:hover img {
+  transform: scale(1.2);
+}
+.album .row .item .wrap .pic .box:hover .play {
+  display: block;
+}
+.album .row .item .wrap .pic .box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease 0s;
+  z-index: -1;
+}
+.album .row .item .wrap .pic .cd {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/album-cover-gold.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -11%;
+  top: 0;
+  z-index: -1;
+}
+.album .row .item .wrap .album-name {
+  width: 100%;
+}
+.album .row .item .wrap .album-name a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+.album .row .item .wrap .album-name a:hover {
+  color: #ff00a7;
+}
+.album .row .item .wrap .album-name a:nth-child(2) {
+  color: red;
+}
+
+/*# sourceMappingURL=album.css.map */

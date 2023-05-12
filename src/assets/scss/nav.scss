@@ -1,0 +1,254 @@
+ul {
+  list-style: none;
+}
+// 导航条
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4)!important;
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  .container {
+    height: 100%;
+    .header {
+      height: 100%;
+    }
+    .collapse {
+      height: 100%;
+    }
+  }
+  .navbar-brand {
+    color: #fff;
+    width: 130px;
+    img {
+      width: 50px;
+      vertical-align: middle;
+    }
+  }
+  // .music-nav {
+  //   // min-width: 780px;
+  //   height: 100%;
+  //   width: 80%;
+  //   li {
+  //     text-align: center;
+  //     height: 100%;
+  //     line-height: 76px;
+  //     width: 90px;
+  //     float: left;
+  //     margin: 0;
+  //     a {
+  //       display: block;
+  //       width: 100%;
+  //       height: 100%;
+  //       text-decoration: none;
+  //       color: #fff;
+  //     }
+  //     &:hover {
+  //       background: #ff00a7;
+  //       cursor: pointer;
+  //     }
+  //     &:nth-child(6) {
+  //       background: none;
+  //       width: 100%;
+  //       max-width: 230px;
+  //       margin-left: 10px;
+  //       position: relative;
+  //       span {
+  //         width: 24px;
+  //         height: 24px;
+  //         background: url('../img/search.png') no-repeat;
+  //         background-size: 100%;
+  //         position: absolute;
+  //         top: 50%;
+  //         right: 12px;
+  //         transform: translate(0,-50%);
+  //         &:hover {
+  //           background-image: url('../img/搜索.png');
+  //         }
+  //       }
+  //       .form-inline {
+
+  //         input {
+  //           font-size: 12px;
+  //           width: 100%;
+  //           height: 40px;
+  //           border-radius: 20px;
+  //           border: 0;
+  //           outline: none;
+  //           padding-left: 30px;
+  //           box-sizing: border-box;
+  //           font-size: 12px;
+  //           background-size: 10%;
+  //           background-position: 95% 50%;
+  //           margin-right: 15px;
+  //         }
+  //       }
+  //     }
+  //     &:nth-child(7) {
+  //       background: none;
+  //       a {
+  //         display: inline;
+  //         &:hover {
+  //           color: #ff00a7;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  .navbar-nav {
+    // height: 60px!important;
+    li {
+      text-align: center;
+      height: 100%;
+      // line-height: 76px;
+      padding: 10px 0;
+      width: 90px;
+      float: left;
+      margin: 0;
+      .nav-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #fff!important;
+      }
+      &:hover {
+        background: #ff00a7;
+        color: #fff;
+        cursor: pointer;
+      }
+      &:nth-child(6) {
+        background: none;
+        width: 100%;
+        max-width: 230px;
+        margin-left: 10px;
+        position: relative;
+        span {
+          width: 24px;
+          height: 24px;
+          background: url('../img/search.png') no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          transform: translate(0,-50%);
+          &:hover {
+            background-image: url('../img/搜索.png');
+          }
+        }
+        .form-inline {
+
+          input {
+            font-size: 12px;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: none;
+            padding-left: 30px;
+            box-sizing: border-box;
+            font-size: 12px;
+            background-size: 10%;
+            background-position: 95% 50%;
+            margin-right: 15px;
+          }
+        }
+      }
+      &:nth-child(7) {
+        background: none;
+        position: relative;
+        .userinfo {
+          position: absolute;
+          top: 60px;
+          // width: 130px;
+          // background: rgba(0, 0, 0, 0.4)!important;
+          background: #222;
+          backdrop-filter: blur(20px);
+          display: none;
+          &::before {
+            content: '';
+            display: block;
+            width: 0;
+            border: 8px solid transparent;
+            // border-bottom-color: rgba(0, 0, 0, 0.4)!important;
+            border-bottom-color: #222;
+            position: absolute;
+            left: 41%;
+            top: -16%;
+          }
+          li {
+            // background: none;
+            // span {
+            //   display: block;
+            //   width: 25px;
+            //   height: 25px;
+            //   background: url('../img/logout.png') no-repeat;
+            //   background-size: 100%;
+            // }
+            background: url('../img/user.png') no-repeat;
+            background-size: 20%;
+            background-position: 5% 50%;
+            padding-left: 14px;
+            &:nth-child(2) {
+              background-image: url('../img/logout.png');
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        &:hover {
+          .userinfo {
+            display: block;
+            li {
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        a {
+          display: inline;
+          color: #fff;
+          // padding: 0 10px;
+          &:hover {
+            color: #ff00a7!important;
+          }
+        }
+      }
+    }
+    .form-inline {
+      input {
+        font-size: 12px;
+        width: 230px!important;
+        height: 40px;
+        border-radius: 20px;
+        border: 0;
+        outline: none!important;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 12px;
+        background-size: 10%;
+        background-position: 95% 50%;
+        margin-right: 15px;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }      
+      .search {
+        width: 24px;
+        height: 24px;
+        background: url('../img/search.png') no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+        &:hover {
+          background-image: url('../img/搜索.png');
+        }
+      }
+    }
+  }
+}

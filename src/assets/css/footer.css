@@ -1,0 +1,31 @@
+.footer {
+  background: #333;
+}
+.footer .main {
+  padding: 50px 0;
+  font-size: 0.8vw;
+}
+.footer .main div {
+  width: 100%;
+  height: 30%;
+  color: #999;
+}
+.footer .main div ul {
+  padding: 0 !important;
+}
+.footer .main div ul li {
+  margin: 5px 0;
+}
+.footer .main div ul li a {
+  text-decoration: none;
+  color: #999;
+}
+.footer .main div ul li a:hover {
+  color: #ff00a7;
+}
+.footer .main .about ul {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=footer.css.map */

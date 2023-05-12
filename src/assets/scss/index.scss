@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+
+// 导航条
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4)!important;
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  .container {
+    height: 100%;
+    .header {
+      height: 100%;
+    }
+    .collapse {
+      height: 100%;
+    }
+  }
+  .navbar-brand {
+    color: #fff;
+    width: 130px;
+    img {
+      width: 50px;
+      vertical-align: middle;
+    }
+  }
+  // .music-nav {
+  //   // min-width: 780px;
+  //   height: 100%;
+  //   width: 80%;
+  //   li {
+  //     text-align: center;
+  //     height: 100%;
+  //     line-height: 76px;
+  //     width: 90px;
+  //     float: left;
+  //     margin: 0;
+  //     a {
+  //       display: block;
+  //       width: 100%;
+  //       height: 100%;
+  //       text-decoration: none;
+  //       color: #fff;
+  //     }
+  //     &:hover {
+  //       background: #ff00a7;
+  //       cursor: pointer;
+  //     }
+  //     &:nth-child(6) {
+  //       background: none;
+  //       width: 100%;
+  //       max-width: 230px;
+  //       margin-left: 10px;
+  //       position: relative;
+  //       span {
+  //         width: 24px;
+  //         height: 24px;
+  //         background: url('../img/search.png') no-repeat;
+  //         background-size: 100%;
+  //         position: absolute;
+  //         top: 50%;
+  //         right: 12px;
+  //         transform: translate(0,-50%);
+  //         &:hover {
+  //           background-image: url('../img/搜索.png');
+  //         }
+  //       }
+  //       .form-inline {
+
+  //         input {
+  //           font-size: 12px;
+  //           width: 100%;
+  //           height: 40px;
+  //           border-radius: 20px;
+  //           border: 0;
+  //           outline: none;
+  //           padding-left: 30px;
+  //           box-sizing: border-box;
+  //           font-size: 12px;
+  //           background-size: 10%;
+  //           background-position: 95% 50%;
+  //           margin-right: 15px;
+  //         }
+  //       }
+  //     }
+  //     &:nth-child(7) {
+  //       background: none;
+  //       a {
+  //         display: inline;
+  //         &:hover {
+  //           color: #ff00a7;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  .navbar-nav {
+    // height: 60px!important;
+    li {
+      text-align: center;
+      height: 100%;
+      // line-height: 76px;
+      padding: 10px 0;
+      width: 90px;
+      float: left;
+      margin: 0;
+      .nav-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #fff!important;
+      }
+      &:hover {
+        background: #ff00a7;
+        color: #fff;
+        cursor: pointer;
+      }
+      &:nth-child(6) {
+        background: none;
+        width: 100%;
+        max-width: 230px;
+        margin-left: 10px;
+        position: relative;
+        span {
+          width: 24px;
+          height: 24px;
+          background: url('../img/search.png') no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          transform: translate(0,-50%);
+          &:hover {
+            background-image: url('../img/搜索.png');
+          }
+        }
+        .form-inline {
+
+          input {
+            font-size: 12px;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: none;
+            padding-left: 30px;
+            box-sizing: border-box;
+            font-size: 12px;
+            background-size: 10%;
+            background-position: 95% 50%;
+            margin-right: 15px;
+          }
+        }
+      }
+      &:nth-child(7) {
+        background: none;
+        position: relative;
+        .userinfo {
+          position: absolute;
+          top: 60px;
+          // width: 130px;
+          // background: rgba(0, 0, 0, 0.4)!important;
+          background: #222;
+          backdrop-filter: blur(20px);
+          display: none;
+          &::before {
+            content: '';
+            display: block;
+            width: 0;
+            border: 8px solid transparent;
+            // border-bottom-color: rgba(0, 0, 0, 0.4)!important;
+            border-bottom-color: #222;
+            position: absolute;
+            left: 41%;
+            top: -16%;
+          }
+          li {
+            // background: none;
+            // span {
+            //   display: block;
+            //   width: 25px;
+            //   height: 25px;
+            //   background: url('../img/logout.png') no-repeat;
+            //   background-size: 100%;
+            // }
+            background: url('../img/user.png') no-repeat;
+            background-size: 20%;
+            background-position: 5% 50%;
+            padding-left: 14px;
+            &:nth-child(2) {
+              background-image: url('../img/logout.png');
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        &:hover {
+          .userinfo {
+            display: block;
+            li {
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        a {
+          display: inline;
+          color: #fff;
+          // padding: 0 10px;
+          &:hover {
+            color: #ff00a7!important;
+          }
+        }
+      }
+    }
+    .form-inline {
+      input {
+        font-size: 12px;
+        width: 230px!important;
+        height: 40px;
+        border-radius: 20px;
+        border: 0;
+        outline: none!important;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 12px;
+        background-size: 10%;
+        background-position: 95% 50%;
+        margin-right: 15px;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }      
+      .search {
+        width: 24px;
+        height: 24px;
+        background: url('../img/search.png') no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+        &:hover {
+          background-image: url('../img/搜索.png');
+        }
+      }
+    }
+  }
+}
+@media (min-width:576px) and (max-width:960px) {
+  .container {
+    // justify-content: center;
+    .navbar {
+      width: 100%;
+      .navbar-nav {
+        li {
+          text-align: center;
+          // width: 100%!important;
+          height: 100%;
+          // line-height: 76px;
+          // width: 90px;
+          float: left;
+          margin: 0;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #fff;
+          }
+          &:hover {
+            background: none;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @-webkit-keyframes fadeInOut {
+//   0% {
+//       opacity:0;
+//    }
+//   // 25% {
+//   //     opacity:0;
+//   // }
+//   // 50% {
+//   //     opacity: 0;    
+//   // }
+//   100% {
+//       opacity:1;
+//   }
+// }
+// .banner {
+//   position:absolute;    
+//   -webkit-animation-name: fadeInOut;
+//   -webkit-animation-timing-function: ease-in-out;
+//   // -webkit-animation-iteration-count: infinite;  
+//   -webkit-animation-duration: 1s;
+//   -webkit-animation-delay:3s;
+//   // -webkit-animation-direction: alternate;
+// }
+// 轮播图
+.banner {
+  background: url('../img/banner.jpg');
+  overflow: hidden;
+  position: relative;
+  .inner {
+    width: 100%;
+    height: 420px;
+    background: inherit;
+    filter: blur(20px);
+    transform: scale(1.7);
+    position: absolute;
+    top: 0;
+  }
+  #carouselExampleIndicators {
+    margin-top: 60px;
+    box-sizing: border-box;
+    // z-index: -1;
+    position: relative;
+    // overflow: hidden
+    .carousel-indicators {
+      .active {
+        background-color: #ff00a7;
+      }
+      li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 1;
+        margin: 0 10px;
+      }
+    }
+    &:hover {
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        display: block;
+      }
+    }
+    .carousel-control-prev-icon {
+      width: 40px;
+      height: 40px;
+      display: none;
+      background-image: url('../img/angle-left.png');
+    }
+    .carousel-control-next-icon {
+      width: 40px;
+      height: 40px;
+      display: none;
+      background-image: url('../img/angle-right.png');
+    }
+    img {
+      // min-width: 930px;
+      &:nth-child(1) {
+        width: 100%;
+      }
+    }
+  }
+}
+// 好歌推荐
+.recommend {
+  .main {
+    padding-top: 30px;
+    h2 {
+      color: #222;
+      font-size: 1.4em;
+    }
+    h3 {
+      color: rgba(255,0,167,.2);
+      margin-top: -3px;
+      font-size: 0.8em;
+      margin-bottom: 40px;
+    }
+    .songlist {
+      width: 100%;
+      .item {
+        height: 100%;
+        transition: all .2s linear;
+        position: relative;
+        .play {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          transform: translate(-50%,-50%);
+          background: url('../img/play.png') no-repeat;
+          background-size: 100% 100%;
+          cursor: pointer;
+          display: none;
+          &:hover {
+            background-image: url('../img/play2.png');
+          }
+        }
+        &:hover {
+          box-shadow: 0 15px 30px rgb(255 0 167 / 10%);
+          transform: translate3d(0,-5px,0);
+          .play {
+            display: block;
+          }
+        }
+        div {
+          padding-top: 10px;
+          box-sizing: border-box;
+          width: 100%;
+          // height: 80px;
+          text-align: center;
+          font-size: 1vw;
+          p {
+            // margin-bottom: 0;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 排行榜
+.ranklist {
+  // background: #f2f2f2;
+  .main {
+    padding-top: 30px;
+    h2 {
+      color: #222;
+      font-size: 1.4em;
+    }
+    &>h3 {
+      color: rgba(255,0,167,.2);
+      margin-top: -3px;
+      font-size: 0.8em;
+      margin-bottom: 40px;
+    }
+    .row {
+      width: 100%;
+      &>div {
+        width: 30%;
+        // height: 500px;
+        // background: palevioletred;
+        position: relative;
+        padding-top: 40px;
+      }
+      h3 {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        color: #ff00ba;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    //     background: linear-gradient(
+    // 135deg,#ff010c,#ff00ba);
+      }
+      table {
+        // font-size: 12px;
+        tr {
+          transition: all .2s linear;
+          cursor: pointer;
+          td {
+            // border-radius: 8px;
+            a {
+              color: #000;
+              text-decoration: none;
+              &:hover {
+                color: #ff00ba;
+              }
+            }
+            .song {
+              font-size: 0.8em;
+            }
+            .singer {
+              font-size: 0.6em;
+            }
+            &:first-child {
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
+            }
+            &:last-child {
+              border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
+            }
+            
+          }
+          .time {
+            font-size: 0.4em;
+            color: rgba(51,51,51,.6);
+          }
+          &:hover {
+            box-shadow: 0 10px 30px rgb(255 0 167 / 10%);
+  transform: translate3d(0, -5px, 0);
+          background: #f1f1f1;
+          }
+        }
+      }
+      ul {
+        // background: #f1f1f1;
+        min-width: 207px;
+        li {
+          color: #000;
+          border-radius: 8px;
+          transition: all .2s linear;
+          &:hover {
+            box-shadow: 0 10px 30px rgb(255 0 167 / 10%);
+    transform: translate3d(0, -5px, 0);
+            background: #f1f1f1;
+          }
+          // span {
+          //   flex: 0 0 50px;
+          // }
+          img {
+            border-radius: 5px;
+          }
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+          span {
+            color: rgba(51,51,51,.6);
+          }
+          .detail {
+            box-sizing: border-box;
+            &:hover a{
+              color: #ff00ba;
+            }
+            .song {
+              font-size: 16px;
+            }
+            .singer {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .surge {
+        table {
+          // font-size: 12px;
+          tr {
+            transition: all .2s linear;
+            td {
+              &:nth-child(2) {
+                padding-right: 10px;
+              }
+              // border-radius: 8px;
+              a {
+                color: #000;
+                text-decoration: none;
+                &:hover {
+                  color: #ff00ba;
+                }
+              }
+              .song {
+                font-size: 0.8em;
+              }
+              .singer {
+                font-size: 0.6em;
+              }
+              &:first-child {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+              }
+              &:last-child {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+              }
+              
+            }
+            .time {
+              font-size: 0.4em;
+              color: rgba(51,51,51,.6);
+            }
+            &:hover {
+              box-shadow: 0 10px 30px rgb(255 0 167 / 10%);
+    transform: translate3d(0, -5px, 0);
+            background: #f1f1f1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 热门歌单
+.hotlist {
+  background: #f3f3f3;
+  padding-bottom: 80px;
+  .main {
+    padding-top: 30px;
+    h2 {
+      color: #222;
+      font-size: 2vw;
+    }
+    &>h3 {
+      color: rgba(255,0,167,.2);
+      margin-top: -3px;
+      font-size: 1vw;
+      margin-bottom: 40px;
+    }
+    .list {
+      width: 100%;
+      flex-wrap: wrap;
+      // background: cornflowerblue;
+      .item {
+        width: 24%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        &:hover {
+          .play {
+            display: block;
+          }
+        }
+        .play {
+          width: 4vw;
+          height: 4vw;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          background: url('../img/play.png') no-repeat;
+          background-size: 100% 100%;
+          cursor: pointer;
+          display: none;
+          &:hover {
+            background-image: url('../img/play2.png');
+          }
+        }
+        .wrap {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 10px;
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
+          }
+          span {
+            z-index: 100;
+          }
+          img { 
+            width: 100%;
+            transition: all 0.6s ease 0s;
+          }
+        }
+        a {
+          // height: 50px;
+          font-size: 1vw;
+          text-decoration: none;
+          color: #000;
+          &:hover {
+            color: #ff00ba;
+          }
+        }
+      }
+    }
+  }
+}
+// footer
+.footer {
+  background: #333;
+  .main {
+    padding: 50px 0;
+    font-size: 0.8vw;
+    // font-size: 14px;
+    div{
+      width: 100%;
+      height: 30%;
+      // background:blueviolet;
+      color: #999;
+      ul {
+        li {
+          margin: 5px 0;
+          a {
+            text-decoration: none;
+            color: #999;
+            &:hover {
+              color: #ff00a7;
+            }
+          }
+        }
+      }
+    }
+    .about {
+      ul {
+        width: 100%;
+        // li {
+        //   padding: 10px 0;
+        // }
+      }
+    }
+  }
+}

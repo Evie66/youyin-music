@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.form-control:focus {
+  box-shadow: none;
+}
+
+.search {
+  background: url("../img/search_bg.jpg") no-repeat;
+  background-size: 100% 357px;
+}
+.search .container {
+  max-width: 1300px;
+}
+.search .main {
+  margin-bottom: 50px;
+}
+.search .main .search-header {
+  padding-top: 117px;
+  width: 60%;
+  margin: 0 auto;
+}
+.search .main .search-header .box {
+  position: relative;
+}
+.search .main .search-header .box input {
+  font-size: 12px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-size: 10%;
+  background-position: 95% 50%;
+  margin-right: 15px;
+}
+.search .main .search-header .box .search-icon {
+  width: 24px;
+  height: 24px;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.search .main .search-header .box .search-icon:hover {
+  background-image: url("../img/搜索.png");
+}
+.search .main .search-list {
+  background: #fff;
+  margin-top: 85px;
+  box-shadow: 0 0 80px 0 rgba(50, 50, 50, 0.15);
+}
+.search .main .search-list .title ul li a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+.search .main .search-list .title ul li a.active {
+  color: #ff00a7;
+}
+.search .main .search-list .title ul li a.active::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #ff00a7;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.search .main .search-list .result table {
+  padding: 0 50px;
+}
+.search .main .search-list .result table thead tr {
+  height: 80px;
+}
+.search .main .search-list .result table thead tr th {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+.search .main .search-list .result table tbody tr {
+  height: 70px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.search .main .search-list .result table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+.search .main .search-list .result table tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+.search .main .search-list .result table tbody tr td:first-child {
+  color: #999;
+}
+.search .main .search-list .result table tbody tr td:nth-child(2) {
+  width: 30%;
+}
+.search .main .search-list .result table tbody tr td .song {
+  font-size: 0.4em;
+  color: #333;
+  text-decoration: none;
+}
+.search .main .search-list .result table tbody tr td .song:hover {
+  color: #ff00a7;
+}
+.search .main .search-list .result table tbody tr td .singer {
+  font-size: 0.4em;
+  color: #ff00a7;
+  text-decoration: none;
+}
+.search .main .search-list .result table tbody tr td:last-child {
+  position: relative;
+}
+.search .main .search-list .result table tbody tr td:last-child .add {
+  position: absolute;
+  top: 50%;
+  right: 162px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  line-height: 16px;
+  display: none;
+  z-index: 100;
+}
+.search .main .search-list .result table tbody tr td:last-child .add .icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/add.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+.search .main .search-list .result table tbody tr td:last-child .add .icon:hover {
+  background-image: url("../img/add-select.png");
+}
+.search .main .search-list .result table tbody tr .album {
+  font-size: 0.4em;
+}
+.search .main .search-list .result table tbody tr .album:hover {
+  color: #ff00a7;
+}
+.search .main .search-list .result table tbody tr:hover {
+  background: rgba(211, 211, 211, 0.5);
+}
+.search .main .search-list .result table tbody tr:hover .add {
+  display: block !important;
+}
+
+/*# sourceMappingURL=search.css.map */

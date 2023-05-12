@@ -1,0 +1,318 @@
+.albuminfo {
+  padding-top: 60px;
+  background: url('https://cdnmusic.migu.cn/picture/2021/0513/1521/AMaffbaece8913ed61c3442e76d34d4de6.jpg');
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  .inner {
+    width: 100%;
+    height: 420px;
+    background: inherit;
+    filter: blur(40px);
+    transform: scale(1.7);
+    position: absolute;
+    top: 0;
+  }
+  .main {
+    // height: 300px;
+    align-items: center;
+    &>div {
+      height: 100%;
+      &:first-child {
+        // background: pink;
+        width: 20%;
+        padding: 40px 0;
+        margin-right: 60px;
+        z-index: 999;
+        .wrap {
+          width: 100%;
+          height: 100%;
+          margin-right: 0;
+          // margin: 0 auto;
+          align-items: center;
+          .pic {
+            width: 100%;
+            position: relative;
+            
+            .box {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              
+              &:hover {
+                img {
+                  transform: scale(1.2);
+                }
+                .play {
+                  display: block;
+                }
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                transition: all 0.6s ease 0s;
+                z-index: -1;
+              }
+            }
+            .cd {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: url(../img/album-cover-gold.png) no-repeat;
+              background-size: 100% 100%;
+              position: absolute;
+              right: -11%;
+              top: 0;
+              // transform: translate(0%, -60%);
+              z-index: -1;
+            }
+            
+  
+            
+          }
+        }
+      }
+      &:last-child {
+        // background: hotpink;
+        width: 80%;
+        height: 100%;
+        z-index: 999;
+        &>div,h2 {
+          padding: 15px 0;
+        }
+        h2 {
+          font-weight: 700;
+        }
+        .singer {
+          // color: #666;
+        }
+        .btns {
+          color: #222;
+          font-size: 12px;
+          cursor: pointer;
+          li {
+            &.cur span {
+              background: #ff00a7;
+              color: #fff;
+              border: 1px solid #ff00a7;
+              &:hover {
+                background: #f0009c;
+                color: #fff;
+                border: 1px solid #f0009c;
+              }
+            }
+            .btn_play {
+              // background: #fff;
+              padding: 0 23px;
+              display: inline-block;
+              height: 38px;
+              border-radius: 19px;
+              line-height: 38px;
+              box-sizing: border-box;
+              margin-right: 6px;
+              border: 1px solid #c9c9c9;
+        color: #fff;
+        
+
+              position: relative;
+              &:hover {
+                background: #fbfbfb;
+                color: #666;
+              }
+              .icon_play {
+                display: inline-block;
+                width: 13px;
+                height: 16px;
+                vertical-align: -3px;
+                background: url('../img/icon_sprite.630b3e60.png') no-repeat;
+                background-position: -80px -220px;
+                margin-right: 6px;
+              }
+              .love {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                vertical-align: -5px;
+                margin-right: 4px;
+                background: url(../img/love.png) no-repeat;
+                background-size: 100%;
+                cursor: pointer;
+              }
+              .add {
+                width: 16px;
+                background-position: -20px 0;
+              }
+            }
+            .love-wrap {
+              &:hover {
+                .love {
+                  background-image: url("../img/love-full.png");
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.like-list {
+  // height: 500px;
+  background: #fff;
+  .container {
+    max-width: 1200px;
+  }
+  .main {
+    .title {
+      padding: 10px 0;
+      li {
+        flex: 0 0 80px;
+        cursor: pointer;
+        &.cur {
+          color: #ff00a7;
+        }
+      }
+    }
+    .btns {
+      color: #222;
+      font-size: 12px;
+      cursor: pointer;
+      li {
+        &.cur span {
+          background: #ff00a7;
+          color: #fff;
+          border: 1px solid #ff00a7;
+          &:hover {
+            background: #f0009c;
+            border: 1px solid #f0009c;
+          }
+        }
+        .btn_play {
+          background: #fff;
+          padding: 0 23px;
+          display: inline-block;
+          height: 38px;
+          line-height: 38px;
+          box-sizing: border-box;
+          margin-right: 6px;
+          border: 1px solid #c9c9c9;
+          .icon_play {
+            display: inline-block;
+            width: 13px;
+            height: 16px;
+            vertical-align: -3px;
+            background: url('../img/icon_sprite.630b3e60.png') no-repeat;
+            background-position: -80px -220px;
+            margin-right: 6px;
+          }
+          .add {
+            width: 16px;
+            background-position: -20px 0;
+          }
+        }
+      }
+    }
+    .result {
+      table {
+        padding: 0 50px;
+        thead {
+          tr {
+            height: 80px;
+            th {
+              color: #999;
+              font-size: 13px;
+              font-weight: 400;
+            }
+          }
+        }
+        tbody {
+          tr {
+            height: 70px;
+            transition: all .2s linear;
+            cursor: pointer;
+            // &:nth-child(even) {
+            //   background: rgb(250, 250, 250);
+            // }
+            // &:nth-child(odd) {
+            //   background: rgb(247, 247, 247);
+            // }
+            td {
+              &:first-child {
+                color: #999;
+                width: 10%;
+              }
+              &:nth-child(2) {
+                width: 22.5%;
+              }
+              &:nth-child(3) {
+                width: 22.5%;
+              }
+              &:last-child {
+                position: relative;
+                width: 22.5%;
+                .love {
+                  position: absolute;
+                  top: 50%;
+                  // right: 162px;
+                  width: 30px;
+                  height: 30px;
+                  transform: translateY(-50%);
+                  line-height: 16px;
+                  display: none;
+                  z-index: 100;
+                  .icon {
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background: url('../img/love.png') no-repeat;
+                    background-size: 100%;
+                    cursor: pointer;
+                    z-index: 100;
+                    &:hover {
+                      background-image: url('../img/love-full.png');
+                    }
+                  }
+                  .cur{
+                    background-image: url('../img/love-full.png');
+                  }
+                }
+              }
+              .song {
+                font-size: 0.4em;
+                color: #333;
+                text-decoration: none;
+                &:hover {
+                  color: #ff00a7;
+                }
+              }
+              .singer {
+                font-size: 0.4em;
+                color: #ff00a7;
+                text-decoration: none;
+              }
+            }
+            .album {
+              font-size: 0.4em;
+              width: 22.5%;
+              &:hover {
+                color: #ff00a7;
+              }
+            }
+            &:hover {
+              // box-shadow: 0 10px 30px rgb(255 0 167 / 10%);
+              // transform: translate3d(0, -5px, 0);
+              background: rgba(211, 211, 211, .5);
+              .love {
+                display: block!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
